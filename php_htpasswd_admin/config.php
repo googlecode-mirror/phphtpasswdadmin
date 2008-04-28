@@ -1,3 +1,3 @@
 <?
-	$AUTH_USER_FILE = "passwd.txt";
+$AUTH_USER_FILE = "passwd.txt";
 ?>
