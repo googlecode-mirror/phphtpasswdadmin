@@ -40,6 +40,7 @@ function ck()
 
 <br/>
 Your password will be synced to bumblebee 5 min later.
+<br/>Powered by <a href="http://code.google.com/p/phphtpasswdadmin/">php htpasswd admin</a>
 </body>
 </html>
 
