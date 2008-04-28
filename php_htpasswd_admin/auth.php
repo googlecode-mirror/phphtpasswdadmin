@@ -66,7 +66,7 @@ class CAuth {
 		return count($this->_list);
 	}
 
-	function apr1_md5($plainpasswd, $salt) {
+	private function apr1_md5($plainpasswd, $salt) {
 		// $salt = substr(str_shuffle("abcdefghijklmnopqrstuvwxyz0123456789"), 0, 8);
 
 		$len = strlen($plainpasswd);
