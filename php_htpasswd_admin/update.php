@@ -1,5 +1,7 @@
 <?php
 
+require_once("config.php");
+
 function c($plainpasswd, $salt) {
     // $salt = substr(str_shuffle("abcdefghijklmnopqrstuvwxyz0123456789"), 0, 8);
 
@@ -31,10 +33,10 @@ function c($plainpasswd, $salt) {
 
 function update($user, $old_passwd, $new_passwd)
 {
-	$AUTH_USER_FILE = "d:/apps/repo/passwd.txt";
-
+	global $AUTH_USER_FILE;
+	
 	$lines = split("\n", file_get_contents($AUTH_USER_FILE));
-
+	
 	for ($i=0; $i<count($lines); ++$i)
 	{
 		$tmp = split(":", $lines[$i]);
