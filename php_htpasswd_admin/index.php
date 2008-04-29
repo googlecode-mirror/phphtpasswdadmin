@@ -1,22 +1,12 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Update Passwd</title>
-<script>
-function ck()
-{
-	var u = document.getElementById("username");
-	var op = document.getElementById("old_passwd");
-	var np = document.getElementById("new_passwd");
-
-	if (u.value == '' || op.value == '' || np.value == '')
-	{
-		alert('Invalid Username or Password');
-		return false;
-	}
-
-	return true;
-}
-</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PHP htpasswd admin</title>
+<script type="text/javascript" src="js/main.js"></script>
+<style type="text/css">
+	@import url(css/style.css);
+</style>
 </head>
 <body>
 
@@ -24,14 +14,14 @@ function ck()
 <table>
 <tr>
 <td>Username</td>
-<td><input type="text" id="username" name="username"></td>
+<td><input type="text" id="username" name="username">*</td>
 </tr>
 <tr>
 <td>Old Passwd</td>
-<td><input type="password" id="old_passwd" name="old_passwd"></td>
+<td><input type="password" id="old_passwd" name="old_passwd">*</td>
 <tr>
 <td>New Passwd</td>
-<td><input type="password" id="new_passwd" name="new_passwd"></td>
+<td><input type="password" id="new_passwd" name="new_passwd">*</td>
 </tr>
 </table>
 

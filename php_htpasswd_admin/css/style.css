@@ -1,0 +1,10 @@
+.small_font { font-size: 8pt; }
+.notice { font-size: 9pt; color:#ff0000}
+
+body {
+	margin-left: 0px;
+	margin-right: 0px;
+	font-size: 12pt;
+	font-family:Arial;
+}
+
